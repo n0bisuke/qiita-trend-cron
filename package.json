@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "bun qiita-ss.ts",
-    "deploy": "git add . && git commit -m 'deploy' && git pull origin main && git push origin main"
+    "deploy": "git add . && git commit -m 'deploy' && git pull origin main --no-edit && git push origin main"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

@@ -26,13 +26,10 @@ jobs:
           uses: oven-sh/setup-bun@v1
           with:
             bun-version: 1.0.11 # or "latest", "canary", <sha>
- 
-        - name: Install bun puppeteer
-          run: >
-            apt-get update
-            apt-get -y install locales fonts-ipafont fonts-ipaexfont
-            echo "ja_JP UTF-8" > /etc/locale.gen && locale-gen
-            
+        
+        - name: Install Japanese fonts
+          run: sudo apt-get install -y fonts-noto-cjk
+
         - name: Install bun puppeteer
           run: npx puppeteer browsers install chrome
 
