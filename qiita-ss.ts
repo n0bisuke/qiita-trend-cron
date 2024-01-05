@@ -47,7 +47,7 @@ const discordPost = async (filePath = `screenshot.png`) => {
     await page.screenshot({ path: SS_FILE_PATH, fullPage: true });
     console.log('Screenshot saved!');
 
-    await setTimeout(1000);
+    await setTimeout(2000);
     const res = await discordPost(SS_FILE_PATH);
     console.log(res);
 
