@@ -6,7 +6,7 @@
     "@types/bun": "latest"
   },
   "scripts": {
-    "start": "bun index.ts"
+    "start": "bun qiita-ss.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
