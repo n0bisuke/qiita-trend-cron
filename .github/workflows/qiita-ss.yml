@@ -34,7 +34,9 @@ jobs:
           run: bun install
         
         - name: 実行
-          run: bun run start
+          run: > 
+            DISCORD_WEBHOOK_URL=${{secrets.DISCORD_WEBHOOK_URL}}
+            bun run start
 
         # - name: Log action...
         #   run: > 
