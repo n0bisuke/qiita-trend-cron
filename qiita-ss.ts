@@ -7,12 +7,12 @@ const SS_FILE_PATH = 'screenshot.png';
 
 //Discord Webhook Post
 const discordPost = async (filePath = `screenshot.png`) => {
-    const DiscordWebhookURL = process.env.DISCORD_WEBHOOK_URL;
+    const DiscordWebhookURL = process.env.DISCORD_WEBHOOK_URL || '';
 
     //送信するデータ1
     const payload = {
-        username: 'n0bisuke BOT',
-        content: 'Node.js Fetch APIからポスト'
+        username: 'Qiitaトレンドチェック',
+        content: 'Qiitaのトレンド通知です。'
     };
 
     try {
