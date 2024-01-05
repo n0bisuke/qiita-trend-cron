@@ -1,5 +1,6 @@
-import puppeteer from 'puppeteer';
-import {setTimeout} from "node:timers/promises";
+
+const puppeteer = require('puppeteer');
+const setTimeout = require("node:timers/promises").setTimeout;
 
 (async () => {
     const browser = await puppeteer.launch({
