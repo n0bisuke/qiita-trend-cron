@@ -6,7 +6,8 @@
     "@types/bun": "latest"
   },
   "scripts": {
-    "start": "bun qiita-ss.ts"
+    "start": "bun qiita-ss.ts",
+    "deploy": "git add . && git commit -m 'deploy' && git pull origin main && git push origin main"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
