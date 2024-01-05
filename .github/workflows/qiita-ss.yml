@@ -28,7 +28,7 @@ jobs:
             bun-version: 1.0.11 # or "latest", "canary", <sha>
         
         - name: Install Japanese fonts
-          run: sudo apt-get install -y fonts-noto-cjk
+          run: sudo apt-get install -y fonts-sawarabi-gothic
 
         - name: Install bun puppeteer
           run: npx puppeteer browsers install chrome
