@@ -11,7 +11,7 @@ const discordPost = async (filePath = `screenshot.png`) => {
 
     //送信するデータ1
     const payload = {
-        username: 'Qiitaトレンドチェック',
+        username: 'QiitaトレンドチェックBOT',
         content: 'Qiitaのトレンド通知です。'
     };
 
